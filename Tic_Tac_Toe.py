@@ -222,7 +222,7 @@ def check_win(lookup, w):
         if flag == 9:
             w[2] = 1
 
-
+# creating and initialising the variables
 mouse_pos = (100, 750)
 running = True
 running_emote = False
@@ -245,14 +245,13 @@ while running:
 
     redraw_game_window()
 
-for i in range(9):
-    print(lookup_table[i])
 
+# loop for the showing the winner
 while running_emote:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running_emote = False
-            print('winner')
+            
 
     redraw_emote_window()
 
